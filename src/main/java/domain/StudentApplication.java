@@ -2,13 +2,13 @@ package domain;
 
 public class StudentApplication {
 
-    private String studentId;
-    private String name;
-    private String surname;
-    private String email;
-    private double averageMark;
-    private String currentCampus;
-    private String status;
+    private final String studentId;
+    private final String name;
+    private final String surname;
+    private final String email;
+    private final double averageMark;
+    private final String currentCampus;
+    private final String status;
 
     //The default constructor
     //private StudentApplication() {}
@@ -59,6 +59,16 @@ public class StudentApplication {
     public String getStatus() {
         return status;
     }
+
+    //DATABASE SETTERS
+    public void setStudentId(String studentId) {}
+    public void setName(String name) {}
+    public void setSurname(String surname) {}
+    public void setEmail(String email) {}
+    public void setAverageMark(double averageMark) {}
+    public void setCurrentCampus(String currentCampus) {}
+    public void setStatus(String status) {}
+
 
     //BUILDER CLASS//
     public static class Builder {

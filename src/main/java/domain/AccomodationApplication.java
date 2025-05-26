@@ -1,15 +1,15 @@
 package domain;
 
 public class AccomodationApplication {
-    private String optionId;
-    private String name;
-    private String location;
-    private double monthlyCost;
-    private boolean availability;
-    private int capacity;
+    private final String optionId;
+    private final String name;
+    private final String location;
+    private final double monthlyCost;
+    private final boolean availability;
+    private final int capacity;
 
     //CONSTRUCTOR WITH ARGUMENT//
-private AccomodationApplication(Builder builder) {
+public AccomodationApplication(Builder builder) {
     this.optionId = builder.optionId;
     this.name = builder.name;
     this.location = builder.location;
@@ -25,6 +25,16 @@ private AccomodationApplication(Builder builder) {
     public double getMonthlyCost() {return monthlyCost;}
     public boolean isAvailability() {return availability;}
     public int getCapacity() {return capacity;}
+
+    //Database setters
+    public void setOptionId(String optionId) {}
+    public void setName(String name) {}
+    public void setLocation(String location) {}
+    public void setMonthlyCost(double monthlyCost) {}
+    public void setAvailability(boolean availability) {}
+    public void setCapacity(int capacity) {}
+
+
 
     //LET'S GET BUILDING//
     public static class Builder {

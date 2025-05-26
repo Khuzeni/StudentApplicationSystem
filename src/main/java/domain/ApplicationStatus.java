@@ -1,11 +1,11 @@
 package domain;
 
 public class ApplicationStatus {
-    private String statusId;
-    private String studentId;
-    private String status;
-    private String decisionDate;
-    private String comments;
+    private final String statusId;
+    private final String studentId;
+    private final String status;
+    private final String decisionDate;
+    private final String comments;
 
     //CONSTRUCTOR WITH ARGUMENT//
     private ApplicationStatus(Builder builder) {
@@ -22,6 +22,13 @@ public class ApplicationStatus {
     public String getStatus() { return status; }
     public String getDecisionDate() { return decisionDate; }
     public String getComments() { return comments; }
+
+    //DATABASE SETTERS
+    public void setStatusId(String statusId) {}
+    public void setStudentId(String studentId) {}
+    public void setStatus(String status) {}
+    public void setDecisionDate(String decisionDate) {}
+    public void setComments(String comments) {}
 
     //LET'S GET BUILDING
     public static class Builder {
